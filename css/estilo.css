@@ -1,0 +1,271 @@
+.service:hover {
+    background-image: linear-gradient(to bottom, #ae00ff, #cf66ff);
+   }
+  
+   .service {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+   }
+  
+   .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   }
+  
+   .service-info {
+    padding: 20px;
+    background-color: #ffffff;
+   }
+  
+   .service-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+  
+   .service-info p {
+    font-size: 14px;
+    color: #555555;
+   }
+  
+   .content-wrapper-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: opacity 0.3s ease;
+   }
+  
+   .pie-pagina {
+    padding: 60px 0; /* Espaciado interno superior e inferior */
+  }
+  
+  .pie-pagina h5 {
+    color: #0c0101; /* Color del texto de los encabezados */
+  }
+  
+  .pie-pagina p {
+    color: #160e0e; /* Color del texto normal */
+  }
+  
+  /* Estilos para los botones de redes sociales */
+  .social-buttons .btn {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-right: 10px; /* Espaciado derecho entre los botones */
+  }
+  
+  /* Estilo para el texto de derechos de autor */
+  .pie-pagina p.copyright {
+    margin-top: 30px; /* Espaciado superior */
+  }
+  
+   .service:hover .content-wrapper-link {
+    opacity: 1;
+   }
+  
+   .btn-theme {
+    background-color: #9466ff;
+    font-size: 16px;
+    padding: 10px 20px;
+   }
+  
+   .service {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+   }
+#service-section {
+    background: linear-gradient(rgba(216, 190, 236, 0.8), rgba(159, 155, 163, 0.67));
+    padding-bottom: 10px;
+}
+
+#service-section .theme-title h2,
+#service-section .theme-title p {
+    color: #fff;
+}
+
+#service-section .row {
+    margin: 0px 0 0 0;
+}
+
+#service-section .row [class*="col-"] {
+    padding-top: 5px;
+}
+
+#service-section .single-service-content {
+    border: 1px solid #808489;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 50px 10px 50px 10px;
+    overflow: hidden;
+    position: relative; /* For the absolute positioning of the icon-heading */
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#service-section .single-service-content p {
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+#service-section .single-service-content .icon-heading {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 60px;
+    transition: top 0.4s ease-in-out;
+}
+
+#service-section .single-service-content .icon-heading .icon {
+    font-size: 14px; /* Smaller font size */
+    color: #ffffff; /* White text color */
+    width: 80px; /* Smaller width */
+    height: 30px; /* Smaller height */
+    margin: 0 auto;
+    background: #232a34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Change the font as needed */
+    transition: transform 0.4s ease-in-out;
+    border-radius: 4px; /* Slightly rounded corners for rectangular shape */
+}
+
+#service-section .single-service-content .icon-heading a {
+    display: block;
+    text-decoration: none; /* Remove underline from links */
+}
+
+#service-section .single-service-content:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+#service-section .single-service-content:hover .icon-heading {
+    top: -10px;
+}
+
+#service-section .single-service-content:hover .icon-heading .icon {
+    transform: rotate(360deg);
+}
+
+#service-section .single-service-content:hover p {
+    opacity: 1;
+    color: #090909;
+    transform: translateY(0);
+}
+
+/* Add custom styles for centering the last row */
+#service-section .row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service-section .row.justify-content-center .col-lg-6,
+#service-section .row.justify-content-center .col-md-6,
+#service-section .row.justify-content-center .col-sm-12 {
+    display: flex;
+    justify-content: center;
+}
+
+#service-section .row.justify-content-center .single-service-content {
+    max-width: 100%; /* Adjust max-width as necessary */
+}
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+.nav-item-child {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #000;
+}
+.nav-item-child:hover {
+    background-color: #ddd;
+}
+/* Estilo para el contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Mostrar el contenido del menú cuando se pasa el ratón por encima del elemento padre */
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+/* Estilo para los enlaces del contenido del menú desplegable */
+.dropdown-content a {
+    color: rgb(38, 11, 11);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.testimonial-section {
+    background: url('/img/frases.png');
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  .testimonial-container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .testimonial-slide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(107, 7, 201, 0.1);
+    background-color: transparent; /* Fondo semi-transparente para legibilidad */
+    border-radius: 10px;
+  }
+  
+  .testimonial-quote-icon-container {
+    flex: 0 0 50px;
+    margin-left: 20px; /* Cambiar el margen al lado izquierdo */
+  }
+  
+ 
+  
+  .testimonial-content-container {
+    flex: 1;
+    text-align: center; /* Alinea el texto a la derecha */
+  }
+  
+  .testimonial-text {
+    font-size: 3rem; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+    font-size: 2.25rem;
+    text-align: right; /* Alinea el autor a la derecha */
+  }
+  
+  .testimonial-swiper-pagination {
+    margin-top: 20px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; /* Ajustar según sea necesario */
+  }
+  
